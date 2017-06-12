@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>parallax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            text-align: center;
+            height: 2000px;
+        }
+        .cnt_banner{
+            width: 100%;
+            height: 401px;
+            background: url(./images/banner.jpg) 50% 0 no-repeat fixed;
+            overflow: hidden;
+        }
+        .box1{
+            height: 400px;
+            width: 100%;
+            background: pink;
+            overflow: hidden;
+            position: relative;
+        }
+        .cnt_banner1{
+            width: 100%;
+            height: 300px;
+            background: url(./images/center_sec2.jpg) top center no-repeat fixed;
+            overflow: hidden;
+            position: relative;
+        }
+        .cnt_banner2{
+            width: 100%;
+            height: 300px;
+            background: url(./images/center_sec3.jpg) top center no-repeat fixed;
+            overflow: hidden;
+            position: relative;
+        }
+        .cnt_banner3{
+            width: 100%;
+            height: 300px;
+            background: url(./images/center_sec4.jpg) top center no-repeat fixed;
+            overflow: hidden;
+            position: relative;
+        }
+        .bg{
+            position: relative;
+            text-align: left;
+            width: 100%;
+            background-image: url(./images/bg_dot.png);
+            background-repeat: repeat;
+            height: 300px;
+        }
+        /*.center .cnt_banner1 {width:100%;height:300px;background:url(../images/center_sec1.jpg) 0 0 no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner2 {width:100%;height:300px;background:url(../images/center_sec2.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner3 {width:100%;height:300px;background:url(../images/center_sec3.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner4 {width:100%;height:300px;background:url(../images/center_sec4.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner5 {width:100%;height:300px;background:url(../images/center_sec5.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner6 {width:100%;height:300px;background:url(../images/center_sec6.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}
+        .center .cnt_banner7 {width:100%;height:300px;background:url(../images/center_sec7.jpg) top center no-repeat fixed;overflow: hidden;position: relative;}*/
+    </style>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+</head>
+<body>
+<div class="cnt_banner"></div>
+<div class="box1"></div>
+<div class="cnt_banner1">
+    <div class="bg"></div>
+</div>
+<div class="box1"></div>
+<div class="cnt_banner2">
+    <div class="bg"></div>
+</div>
+<div class="box1"></div>
+<div class="cnt_banner3">
+    <div class="bg"></div>
+</div>
+<div class="box1"></div>
+<script type="text/javascript">
+    $(function () {
+        <!--PARARA-->
+        $('.cnt_banner').parallax("50%", 0.2);
+        $('.cnt_banner1').parallax("50%", 0.4);
+        $('.cnt_banner2').parallax("50%", 0.3);
+        $('.cnt_banner3').parallax("50%", 0.5);
+        $('.cnt_banner4').parallax("50%", 0.6);
+        $('.cnt_banner6').parallax("50%", 0.3);
+        $('.cnt_banner7').parallax("50%", 0.6);
+    });
+</script>
+
+</body>
+</html>
